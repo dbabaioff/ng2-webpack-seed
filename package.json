@@ -1,15 +1,17 @@
 {
-  "name": "ng2-app-webapck",
+  "name": "ng2-webpack-seed",
   "version": "1.0.0",
-  "description": "Angular 2 Demo App using TypeScript and Webpack",
+  "description": "Seed project for Angular 2 using TypeScript and Webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080",
-    "build": "webpack"
+    "build": "webpack",
+    "postintall": "npm run typings install",
+    "typings": "typings"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbabaioff/ng2-app-webapck.git"
+    "url": "git+https://github.com/dbabaioff/ng2-webpack-seed.git"
   },
   "keywords": [
     "Angular2",
@@ -18,20 +20,21 @@
   "author": "David Babaioff <davidbabaioff@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbabaioff/ng2-app-webapck/issues"
+    "url": "https://github.com/dbabaioff/ng2-webpack-seed/issues"
   },
-  "homepage": "https://github.com/dbabaioff/ng2-app-webapck#readme",
+  "homepage": "https://github.com/dbabaioff/ng2-webpack-seed#readme",
   "dependencies": {
-    "angular2": "2.0.0-beta.0",
-    "es6-promise": "3.0.2",
-    "es6-shim": "0.33.3",
+    "angular2": "2.0.0-beta.6",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.10"
+    "zone.js": "0.5.14"
   },
   "devDependencies": {
     "ts-loader": "0.7.2",
     "typescript": "1.7.5",
+    "typings": "^0.6.8",
     "webpack": "1.12.9",
     "webpack-dev-server": "1.14.0"
   }
