@@ -1,2 +1,3 @@
-# ng2-webpack-seed
-Seed project for Angular 2 using TypeScript and Webpack
+# Deprecated
+
+Use the [official starter kit](https://github.com/angular/angular2-seed) instead.
